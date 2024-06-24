@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useReducer } from 'react';
+import UseLayoutEffect from './UseLayoutEffect';
 
 const initialState = 0 ;
 
@@ -36,6 +37,8 @@ export default function Reducer (){
             <button className='p-4 bg-black text-white' onClick={() => dispatch({type:'RESET'})}>RESET</button>
             </div>
         </div>
+
+        <UseLayoutEffect/>
         </>
     )
 

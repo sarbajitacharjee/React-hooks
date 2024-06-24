@@ -5,10 +5,10 @@ import { useEffect, useState, useRef } from "react";
 function UseRefHook() {
   const InputRef = useRef();
   const text = useRef(null);
-  const name = useRef(" ");
+  const name = useRef("");
 
   const changecolor = () => {
-    InputRef.current.focus();
+    // InputRef.current.focus();
     InputRef.current.style.backgroundColor = `${text.current.value}`;
 
     console.log(name.current.value);
@@ -31,7 +31,7 @@ function UseRefHook() {
       <button className="text-white bg-black p-6 rounded-lg mt-4" onClick={changecolor}>
         Click
       </button>
-      <div className="bg-green-300 rounded-lg w-1/2 mt-10 h-12 text-4xl" ref={InputRef}>
+      <div className="bg-green-300 rounded-lg w-full text-center mt-10 h-12 text-4xl" ref={InputRef}>
         <h1>My Name is : </h1>
       </div>
     </div>
