@@ -20,6 +20,7 @@ const VideoList = () => {
     window.addEventListener("resize", windowresizer);
     document.title = `Count ${count}`;
     
+    
     return () => {
       window.removeEventListener("resize", windowresizer);
     };
@@ -33,7 +34,7 @@ const VideoList = () => {
 
   return (
     <>
-      <div className=" w-full h-screen flex flex-col gap-10 justify-center items-center  bg-green-600">
+      <div className=" w-full h-96 flex flex-col gap-10 justify-center items-center  bg-green-600">
         <h1 className="text-4xl text-Black">Clicked : {count}</h1>
 
         <button
@@ -45,7 +46,7 @@ const VideoList = () => {
         <h1 className="text-4xl text-Black">Window Size : {windowsize}</h1>
       </div>
 {/* --------------------- Code for Context =========================== */}
-      <div className="w-full  text-black text-3xl h-screen flex flex-col gap-10 justify-center items-center  bg-blue-600">
+      <div className="w-full h-96 text-black text-3xl flex flex-col gap-10 justify-center items-center  bg-blue-600">
       <h1>
         My Username : {user.name} , 
       </h1>

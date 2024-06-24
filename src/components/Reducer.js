@@ -27,7 +27,7 @@ export default function Reducer (){
 
     return (
         <>
-        <div className='w-full h-screen flex flex-col justify-center items-center bg-amber-500'>
+        <div className='w-full h-96 flex flex-col justify-center items-center bg-amber-500'>
         <h1 className='text-5xl text-white mb-4 '>        REDUCER USED VALUE :-        {user}</h1>
 
             <div>
