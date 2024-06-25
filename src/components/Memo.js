@@ -27,7 +27,7 @@ const MemoHook = () => {
 
   return (
     <div className="flex flex-col w-full h-96 bg-pink-500 items-center justify-center text-4xl">
-      <button onClick={getValue} className="bg-black hover:b-4 hover:b-white text-white p-4 rounded-lg">
+      <button onClick={getValue} className="bg-black hover:border-2 hover:border-white text-white p-4 rounded-lg">
         Counter
       </button>
 
@@ -36,7 +36,7 @@ const MemoHook = () => {
 
       <button
         onClick={() => setShow(!show)}
-        className="bg-green-800 text-white p-4 mt-4 focus- rounded-lg "
+        className="bg-green-800 text-white p-4 mt-4 focus- rounded-lg hover:border-2 hover:border-white "
       >
         {show ? "You clicked me" : "Click me plz"}
       </button>

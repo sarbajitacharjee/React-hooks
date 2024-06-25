@@ -31,7 +31,7 @@ function UseRefHook() {
       <button className="text-white bg-black p-6 rounded-lg mt-4" onClick={changecolor}>
         Click
       </button>
-      <div className="bg-green-300 rounded-lg w-full text-center mt-10 h-12 text-4xl" ref={InputRef}>
+      <div className="bg-green-300 rounded-lg w-1/2 text-center mt-10 h-12 text-4xl" ref={InputRef}>
         <h1>My Name is : </h1>
       </div>
     </div>
