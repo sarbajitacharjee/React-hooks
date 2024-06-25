@@ -24,6 +24,7 @@ export default function  UseLayoutEffect()
     useLayoutEffect(() => {
         if(Random === 0 ) 
           setRandom(Math.floor(Math.random() * 100));
+
     },[Random]);
     return (
         <div className="w-full h-96 bg-red-400 flex flex-col justify-center items-center">

@@ -5,6 +5,9 @@ import { useContext } from 'react'
 import { AppContext } from './components/CreateContext.js'
 import Reducer from './components/Reducer.js'
 import UseRefHook from './components/UseRefHook'
+import Callback from './components/Callback.js'
+import Memo from './components/Memo.js'
+import FilterMemo from './components/Filtermemo.js'
 
 
 const App = () => {
@@ -15,7 +18,9 @@ const App = () => {
     <ReactHook />
     <Reducer/>
     <UseRefHook/>
-
+    <Callback/>
+    <Memo/>
+    <FilterMemo/>
     {/* <div>
       <h1>
         {user.name}
