@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-anonymous-default-export */
 
-import react , { createContext } from "react";
+import react , { createContext , useContext } from "react";
 
 const AppContext = createContext();
 
@@ -18,5 +18,9 @@ const AppProvider = ({children}) =>{
     );
 };
 
+const useGlobalContext = () =>{
+    return useContext(AppContext);
+}
 
-export  {AppContext , AppProvider as MyProvider};
+
+export  {AppContext , AppProvider as MyProvider , useGlobalContext} ;

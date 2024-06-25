@@ -1,7 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
-import { useContext } from 'react'
-import { AppContext } from "./CreateContext";
+
+// This line uSed for My Custom Hook useglobalcontext
+import { useGlobalContext } from "./CreateContext";
+
+// This two lines are used for Normal Use context
+// import { useContext } from 'react'
+// import { AppContext } from "./CreateContext";
 
 
 
@@ -9,7 +14,9 @@ const VideoList = () => {
   const [count, setcount] = useState(0);
   const [windowsize, setwindowsize] = useState(window.screen.width);
 
-  const user = useContext(AppContext)
+  // const user = useContext(AppContext)                   used for normal use context
+
+  const user = useGlobalContext()                // This line uSed for My Custom Hook 'useglobalcontext'
 
 
   const windowresizer = () => {
@@ -47,6 +54,7 @@ const VideoList = () => {
       </div>
 {/* --------------------- Code for Context =========================== */}
       <div className="w-full h-96 text-black text-3xl flex flex-col gap-10 justify-center items-center  bg-blue-600">
+      <h1 className="underline mb-3">My CONTEXTHOOK</h1>
       <h1>
         My Username : {user.name} , 
       </h1>
