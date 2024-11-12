@@ -6,20 +6,24 @@ import react , { createContext , useContext } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({children}) =>{
-    const userData = {
+    const user1 = {
         name: "Sarbajit Acharjee",
-        age: 22,
+        age: 23,
       };
+      const user2 ={
+        name: "Rahul Kumar",
+        age: 25,
+      }
       
     return(
-        <AppContext.Provider value={userData}>
+        <AppContext.Provider value={{user1,user2}}>
             {children}
         </AppContext.Provider>
     );
 };
 
 const useGlobalContext = () =>{
-    return useContext(AppContext);
+    return useContext(AppContext);            // use global context as option 2 for Accessing data
 }
 
 

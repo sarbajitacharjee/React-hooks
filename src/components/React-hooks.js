@@ -16,7 +16,7 @@ const VideoList = () => {
 
   // const user = useContext(AppContext)                   used for normal use context
 
-  const user = useGlobalContext()                // This line uSed for My Custom Hook 'useglobalcontext'
+  const {user1,user2} = useGlobalContext();          // This line uSed for My Custom Hook 'useglobalcontext'
 
 
   const windowresizer = () => {
@@ -56,9 +56,9 @@ const VideoList = () => {
       <div className="w-full h-96 text-black text-3xl flex flex-col gap-10 justify-center items-center  bg-blue-600">
       <h1 className="underline mb-3">My CONTEXTHOOK</h1>
       <h1>
-        My Username : {user.name} , 
+        My Username : {user1.name} , 
       </h1>
-        My Age is {user.age} 😉
+        My Age is {user1.age} 😉
     </div>  
     </>
   );
